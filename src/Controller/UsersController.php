@@ -87,6 +87,12 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
+    public function logout()
+    {
+        $this->Auth->logout();
+        return $this->redirect(['action' => 'login']);
+    }
+
     /**
      * Add method
      *

@@ -15,7 +15,7 @@
         ?>
     </fieldset>
    
-    <button><?= $this->Html->link(__('New User'), ['action' => 'signup']) ?> </button>
+    <button class="success"><?= $this->Html->link(__('New User'), ['action' => 'signup']) ?> </button>
     <?= $this->Form->button(__('Login')) ?>
     <?= $this->Form->end() ?>
 </div>
